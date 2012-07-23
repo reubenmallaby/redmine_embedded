@@ -1,0 +1,224 @@
+#content {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+#content h1, h2, h3 {border: 0;}
+#content h1 {margin-bottom: 1em;}
+#content CAPTION { font-weight: bold }
+#content DIV.qindex {
+	line-height: 120%;
+	margin-bottom: 1em;
+}
+#content A.qindex {
+   text-decoration: none;
+   font-weight: bold;
+   padding: 2px;
+}
+#content A.qindexHL {
+	text-decoration: underline;
+    font-weight: bold;
+	padding: 2px;
+}
+#content A.el { text-decoration: none; font-weight: bold }
+#content A.elRef { font-weight: bold }
+#content A.code { text-decoration: none; font-weight: normal; color: #1A419D}
+#content A.codeRef { font-weight: normal; color: #1A419D}
+#content DL.el { margin-left: -1cm }
+#content PRE.fragment {
+	border: 1px solid #CCCCCC;
+	background-color: #f5f5f5;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-left: 2px;
+	margin-right: 8px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+#content DIV.fragment {
+	border: 1px solid #CCCCCC;
+	background-color: #f5f5f5;
+	padding: 6px;
+}
+#content DIV.ah { background-color: black; font-weight: bold; color: #ffffff; margin-bottom: 3px; margin-top: 3px }
+#content TD.md { background-color: #F4F4FB; font-weight: bold; }
+#content TD.mdname1 { background-color: #F4F4FB; font-weight: bold; color: #602020; }
+#content TD.mdname { background-color: #F4F4FB; font-weight: bold; color: #602020; width: 600px; }
+#content DIV.groupHeader {
+       margin-left: 16px;
+       margin-top: 12px;
+       margin-bottom: 6px;
+       font-weight: bold;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+#content DIV.groupText { margin-left: 16px; font-style: italic; font-size: 14px }
+#content TD.indexkey {
+	background-color: #eeeeff;
+	font-weight: bold;
+	padding-right  : 10px;
+	padding-top    : 2px;
+	padding-left   : 10px;
+	padding-bottom : 2px;
+	margin-left    : 0px;
+	margin-right   : 0px;
+	margin-top     : 2px;
+	margin-bottom  : 2px;
+	border: 1px solid #CCCCCC;
+}
+#content TD.indexvalue {
+	background-color: #eeeeff;
+	font-style: italic;
+	padding-right  : 10px;
+	padding-top    : 2px;
+	padding-left   : 10px;
+	padding-bottom : 2px;
+	margin-left    : 0px;
+	margin-right   : 0px;
+	margin-top     : 2px;
+	margin-bottom  : 2px;
+	border: 1px solid #CCCCCC;
+}
+#content TR.memlist {
+   background-color: #f0f0f0; 
+}
+#content P.formulaDsp { text-align: center; }
+#content IMG.formulaDsp { }
+#content IMG.formulaInl { vertical-align: middle; }
+#content SPAN.keyword       { color: #008000 }
+#content SPAN.keywordtype   { color: #604020 }
+#content SPAN.keywordflow   { color: #e08000 }
+#content SPAN.comment       { color: #800000 }
+#content SPAN.preprocessor  { color: #806020 }
+#content SPAN.stringliteral { color: #002080 }
+#content SPAN.charliteral   { color: #008080 }
+#content .mdTable {
+	border: 1px solid #868686;
+	background-color: #F4F4FB;
+}
+#content .mdRow {
+	padding: 8px 10px;
+}
+#content .mdescLeft {
+       padding: 0px 8px 4px 8px;
+	font-size: 14px;
+	font-style: italic;
+	background-color: #FAFAFA;
+	border-top: 1px none #E0E0E0;
+	border-right: 1px none #E0E0E0;
+	border-bottom: 1px none #E0E0E0;
+	border-left: 1px none #E0E0E0;
+	margin: 0px;
+}
+#content .mdescRight {
+       padding: 0px 8px 4px 8px;
+	font-size: 14px;
+	font-style: italic;
+	background-color: #FAFAFA;
+	border-top: 1px none #E0E0E0;
+	border-right: 1px none #E0E0E0;
+	border-bottom: 1px none #E0E0E0;
+	border-left: 1px none #E0E0E0;
+	margin: 0px;
+}
+#content .memItemLeft {
+	padding: 1px 0px 0px 8px;
+	margin: 4px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-top-color: #E0E0E0;
+	border-right-color: #E0E0E0;
+	border-bottom-color: #E0E0E0;
+	border-left-color: #E0E0E0;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-color: #FAFAFA;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#content .memItemRight {
+	padding: 1px 8px 0px 8px;
+	margin: 4px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-top-color: #E0E0E0;
+	border-right-color: #E0E0E0;
+	border-bottom-color: #E0E0E0;
+	border-left-color: #E0E0E0;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-color: #FAFAFA;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+#content .search     { color: #003399; font-weight: bold;
+}
+#content FORM.search {
+              margin-bottom: 0px;
+              margin-top: 0px;
+}
+#content INPUT.search { font-size: 75%;
+               color: #000080;
+               font-weight: normal;
+               background-color: #eeeeff;
+}
+#content TD.tiny      { font-size: 75%;
+}
+#content .tabs ul li a#MSearchClose { 
+  width: 12px; 
+  display: inline-block; 
+  overflow: hidden; 
+  padding: 2px; 
+  height: 12px; 
+  line-height: 12px; 
+}
+
+#content .tabs ul li #MSearchField {
+  width: 120px;
+  margin: 0;
+}
+
+#content .tabs ul li #MSearchBox {
+  margin-bottom: -2px;
+}
+
+#content .memitem {
+    padding: 0;
+    margin-bottom: 10px;
+}
+#content .memname {
+    white-space: nowrap;
+    font-weight: bold;
+}
+#content .memproto, .memdoc {
+    border: 1px solid #84b0c7;    
+}
+#content .memdoc {
+    padding: 2px 5px;
+    background-color: #eef3f5;
+    border-top-width: 0;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+        -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-bottomright: 8px;
+        -moz-box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 5px;
+}
+#content .memproto {
+    padding: 0;
+    background-color: #d5e1e8;
+    font-weight: bold;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+        -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+        -moz-box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 5px;
+}

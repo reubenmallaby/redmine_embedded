@@ -1,0 +1,9 @@
+<h3>File Upload</h3>
+<%= form_tag(upload_embedded_path(@project), :multipart => true) do -%> 
+  <p>
+    <label for="upload_file">Select File (ZIP format only, root must be html directory)</label> : 
+    <%= file_field "upload", "datafile" %>
+    <%= submit_tag "Upload" %>
+  </p>  
+<% end -%>
+<hr />

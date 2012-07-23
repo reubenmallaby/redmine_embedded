@@ -1,0 +1,9 @@
+<%= render :partial => "upload" if User.current.allowed_to?(:edit_embedded_doc, @project) -%>
+
+<!-- Embedded page -->
+<%= @content.html_safe %>
+<!-- Embedded page end -->
+
+<% html_title(@title) if @title %>
+
+<% asset_include_tags(@doc_template) %>

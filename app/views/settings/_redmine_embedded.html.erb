@@ -1,0 +1,22 @@
+<p><label>HTML directory</label>
+<%= text_field_tag 'settings[path]', @settings['path'], :size => 80 %>
+<br /><em>Use {PROJECT} to include the project identifier in the path</em></p>
+
+<p><label>Index files</label>
+<%= text_area_tag 'settings[index]', @settings['index'], :cols => 60, :rows => 3 %>
+<br /><em>Space separated list of index files by priority</em></p>
+
+<p><label>Valid extensions</label>
+<%= text_area_tag 'settings[extensions]', @settings['extensions'], :cols => 60, :rows => 3 %>
+<br /><em>Space separated list of file extensions that can be viewed (case insensitive)</em></p>
+
+<p><label>Default template</label>
+<%= select_tag 'settings[template]', options_for_select([''] + Redmine::Plugins::RedmineEmbedded.available_templates, @settings['template']) %></p>
+
+<p><label>Files encoding</label>
+<%= text_field_tag 'settings[encoding]', @settings['encoding'] %>
+<br /><em>Eg. ISO-8859-1<br />Leave this field empty if HTML files are UTF-8 encoded</em></p>
+
+<p><label>Menu caption</label>
+<%= text_field_tag 'settings[menu]', @settings['menu'], :size => 30 %>
+<br /><em>Clear this field if you don't want to add a tab to the project menu</em></p>
