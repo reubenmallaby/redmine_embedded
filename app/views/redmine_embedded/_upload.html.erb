@@ -1,9 +1,14 @@
-<h3>File Upload</h3>
-<%= form_tag(upload_embedded_path(@project), :multipart => true) do -%> 
-  <p>
-    <label for="upload_file">Select File (ZIP format only, root must be html directory)</label> : 
-    <%= file_field "upload", "datafile" %>
-    <%= submit_tag "Upload" %>
-  </p>  
-<% end -%>
+<div class="row">
+  <%= form_tag(upload_embedded_path(@project), :multipart => true) do -%> 
+    <fieldset id="embedded_doc" class="collapsible collapsed">
+      <legend onclick="toggleFieldset(this);">Upload documentation</legend>
+      <div style="display: none;">
+        Select File (ZIP format only, root must be html directory): 
+        <%= file_field "upload", "datafile" %>
+        <%= submit_tag "Upload" %>
+        </div>
+    </fieldset>
+  <% end -%>
+</div>  
+<div class="clearfix"></div>
 <hr />
