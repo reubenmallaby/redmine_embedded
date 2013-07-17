@@ -15,8 +15,6 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-require 'iconv'
-
 class DataFile < ActiveRecord::Base
   def self.save(directory, zipname, upload)
     path = File.join(directory, zipname)
@@ -143,7 +141,7 @@ class RedmineEmbeddedController < ApplicationController
     # Re-encode content if needed
     source_encoding = Setting.plugin_redmine_embedded['encoding'].to_s
     unless source_encoding.blank?
-      begin; @content = Iconv.new('UTF-8', source_encoding).iconv(@content); rescue; end
+      begin; @content = @content.encode("UTF-8", source_encoding); rescue; end
     end
     
     @doc_template = Redmine::Plugins::RedmineEmbedded.detect_template_from_path(path)
