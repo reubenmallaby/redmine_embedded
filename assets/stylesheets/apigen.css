@@ -118,10 +118,9 @@
 
 /* Left side */
 #content #left {
-	overflow: auto;
+	overflow: hidden;
 	width: 270px;
-	height: 100%;
-	position: fixed;
+	float: left;
 }
 
 /* Menu */
@@ -194,10 +193,6 @@
 #content #right {
 	overflow: auto;
 	margin-left: 275px;
-	height: 100%;
-	position: fixed;
-	left: 0;
-	right: 0;
 }
 
 #content #rightInner {
@@ -401,20 +396,6 @@
 #content div.invalid {
 	background-color: #fae4e0;
 	padding: 10px;
-}
-
-/* Splitter */
-#content #splitter {
-	position: fixed;
-	height: 100%;
-	width: 5px;
-	left: 270px;
-	background: #1e5eb6 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAJAgMAAACHww4NAAAAA3NCSVQICAjb4U/gAAAACVBMVEX///////////+OSuX+AAAAA3RSTlMAM/8jH05jAAAACXBIWXMAAArwAAAK8AFCrDSYAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M0BrLToAAAABZ0RVh0Q3JlYXRpb24gVGltZQAwMy8wNy8xMdz+xJMAAAANSURBVAiZY1BzYMCBADAPA5cnpb6OAAAAAElFTkSuQmCC') left center no-repeat;
-	cursor: e-resize;
-}
-
-#content #splitter.active {
-	opacity: .5;
 }
 
 /* Footer */
