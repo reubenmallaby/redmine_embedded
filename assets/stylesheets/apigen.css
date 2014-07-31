@@ -112,10 +112,6 @@
 	color: #e71818;
 }
 
-#content .hidden {
-	display: none;
-}
-
 /* Left side */
 #content #left {
 	overflow: hidden;
