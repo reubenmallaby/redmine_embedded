@@ -31,6 +31,7 @@ class RedmineEmbeddedController < ApplicationController
   
   def index
     file = params[:request_path]
+    file << "." + params[:format] unless file.nil? || params[:format].nil?
     path = get_real_path(file)
     if File.directory?(path)
       file = get_index_file(path)
@@ -48,7 +49,8 @@ class RedmineEmbeddedController < ApplicationController
     if Redmine::MimeType.is_type?('image', path)
       send_file path, :disposition => 'inline', :type => Redmine::MimeType.of(path)
     else
-      embed_file path
+      send_file path, :disposition => 'inline', :type => Redmine::MimeType.of(path)
+      #embed_file path
     end
     
   rescue Errno::ENOENT => e
